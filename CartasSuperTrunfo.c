@@ -1,69 +1,75 @@
 #include <stdio.h>
 
-int main()
-    {printf("Super Trunfo Paises!\n");
-        
-        char cidade [50],cidade2 [50], Estado, Estado2, Codigo[30], Codigo2[30];
-        int Populacao, Populacao2;
-        float Area, Area2, Pib, Pib2;
-        int ponto, ponto2; 
-    
-    printf("Digite o Estado: \n");
-    scanf("%s", &Estado);
+int main() {
+    // Declaração das variáveis para a primeira carta
+    char estado1;
+    char codigo1[4];
+    char nomeCidade1[50];
+    int populacao1;
+    float area1;
+    float pib1;
+    int pontosTuristicos1;
 
-    printf("Digite o codigo da carta: (ex: A01)\n");
-    scanf("%s", &Codigo);
+    // Leitura dos dados da primeira carta
+    printf("Digite o estado (A-H) da Carta 1: ");
+    scanf(" %c", &estado1);
+    printf("Digite o código da Carta 1 (ex: A01): ");
+    scanf("%s", codigo1);
+    printf("Digite o nome da cidade da Carta 1: ");
+    scanf(" %[^\n]", nomeCidade1); // Lê até a nova linha
+    printf("Digite a população da cidade da Carta 1: ");
+    scanf("%d", &populacao1);
+    printf("Digite a área (em km²) da cidade da Carta 1: ");
+    scanf("%f", &area1);
+    printf("Digite o PIB (em bilhões de reais) da cidade da Carta 1: ");
+    scanf("%f", &pib1);
+    printf("Digite o número de pontos turísticos da cidade da Carta 1: ");
+    scanf("%d", &pontosTuristicos1);
 
-    printf("Digite o nome da cidade? \n");
-    scanf ("%s", &cidade);
+    // Declaração das variáveis para a segunda carta
+    char estado2;
+    char codigo2[4];
+    char nomeCidade2[50];
+    int populacao2;
+    float area2;
+    float pib2;
+    int pontosTuristicos2;
 
-    printf("Digite a população de sua cidade: \n");
-    scanf ("%d", &Populacao);
+    // Leitura dos dados da segunda carta
+    printf("Digite o estado (A-H) da Carta 2: ");
+    scanf(" %c", &estado2);
+    printf("Digite o código da Carta 2 (ex: B02): ");
+    scanf("%s", codigo2);
+    printf("Digite o nome da cidade da Carta 2: ");
+    scanf(" %[^\n]", nomeCidade2); // Lê até a nova linha
+    printf("Digite a população da cidade da Carta 2: ");
+    scanf("%d", &populacao2);
+    printf("Digite a área (em km²) da cidade da Carta 2: ");
+    scanf("%f", &area2);
+    printf("Digite o PIB (em bilhões de reais) da cidade da Carta 2: ");
+    scanf("%f", &pib2);
+    printf("Digite o número de pontos turísticos da cidade da Carta 2: ");
+    scanf("%d", &pontosTuristicos2);
 
-    printf("Digite a Área de sua cidade, em km²: \n");
-    scanf("%f", &Area);
+    // Exibição dos dados da primeira carta
+    printf("\nCarta 1:\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome da Cidade: %s\n", nomeCidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
 
-    printf("Digite o Pib de sua cidade: \n");
-    scanf("%f \n", &Pib);
+    // Exibição dos dados da segunda carta
+    printf("\nCarta 2:\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Nome da Cidade: %s\n", nomeCidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
 
-    printf("Quantos pontos turisticos existem em sua cidade? \n");
-    scanf("%d \n", &ponto); 
-
-    printf("Estado: %s \n", &Estado);
-    printf ("Sua carta: %s\n", &Codigo);
-    printf("Nome da cidade: %s\n", &cidade);
-    printf("População: %d \n", &Populacao);
-    printf("Área em km²: %f, \n", &Area);
-    printf("Pib: %f \n", &Pib);
-    printf("Pontos turisticos: %d \n", &ponto); 
-
-    
-    printf("Digite o Estado: \n");
-    scanf("%s \n", &Estado2);
-
-    printf("Digite o codigo da carta: (ex: A01)\n");
-    scanf("%s \n", &Codigo2);
-
-    printf("Digite o nome da cidade? \n");
-    scanf ("%s \n", &cidade2);
-
-    printf("Digite a população de sua cidade: \n");
-    scanf ("%d \n", &Populacao2);
-
-    printf("Digite a Área de sua cidade, em km²: \n");
-    scanf("%f \n", &Area2);
-
-    printf("Digite o Pib de sua cidade: \n");
-    scanf("%f \n", &Pib2);
-
-    printf("Quantos pontos turisticos existem em sua cidade? \n");
-    scanf("%d \n", &ponto2);
-    printf("Estado: %s \n", &Estado2);
-    printf ("Sua carta: %s\n", &Codigo2);
-    printf("Nome da cidade: %s\n", &cidade2);
-    printf("População: %d \n", &Populacao2);
-    printf("Área em km²: %f, \n", &Area2);
-    printf("Pib: %f \n", &Pib2);
-    printf("Pontos turisticos: %d \n", &ponto2); 
-    
+    return 0;
 }
